@@ -3,6 +3,7 @@ body{
     max-width: 8.5in;
 }
 
+
 header{
 display: flex; 
 margin-bottom: 2em;
@@ -17,10 +18,11 @@ header #logo_container{
 
 header #logo_container #logo{
     padding: 0;
-    width: 82px;
-    height: 97px;
+    width: 137px;
+    height: 162px;
     margin: 0 auto;
     background-image: url("../static/logocrop.png");
+    background-size: cover;
 }
 
 
@@ -32,7 +34,8 @@ header #name-container{
 header #name-container #name{
     font-size: 3em;
     text-align: left;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
+
     
 }
 
@@ -66,6 +69,7 @@ width: 100%;
 main #side-column{
     border-right: solid 1px black; 
     max-width: 25%;
+    font-family: "mukta-vaani";
 }
 
 
@@ -83,10 +87,10 @@ main #side-column{
 
 #telephone-container #phone-icon{
 
-    margin: 0em 0.5em;
-    display: inline-block;
-    background-image: url("../static/phoneicon.png");
-    width: 20px;
+    margin: 0em 0.5em; 
+    display: inline-block; 
+    background-image: url("../static/phoneicon.png"); 
+    width: 20px; 
     height: 20px; 
 }
 
@@ -167,6 +171,11 @@ main #side-column{
     padding-right: 1em;
 }
 
+#center-column {
+    font-family: "mukta-vaani";
+    
+}
+
 #center-column #professional-profile{
     padding: 0em 1em;
 }
@@ -176,6 +185,8 @@ main #side-column{
     font-size: 1.2em;
     margin-bottom: 1em;
 }
+
+
 
 #center-column #experience{
     padding: 0em 1em;
@@ -223,6 +234,16 @@ footer{
     font-family: 'aragon-sans';
     src: url('../static/fonts/aragon-sans.woff2') format('woff2'),
          url('../static/fonts/aragon-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'mukta-vaani';
+    src: url('../static/fonts/mukta-vaani.woff2') format('woff2'),
+         url('../static/fonts/mukta-vaani.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
