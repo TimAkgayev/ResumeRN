@@ -182,6 +182,11 @@ main #side-column{
     padding: 0em 1em;
 }
 
+#center-column #professional-profile #bio{
+    margin-top: 1em;
+
+}
+
 #center-column #professional-profile #professional-profile-heading{
     text-transform:uppercase;
     font-size: 1.2em;
@@ -257,4 +262,14 @@ footer{
     font-weight: normal;
     font-style: normal;
 
+}
+
+@media print {
+    .no-print{
+        display: none !important;
+    }
+
+    .no-print-border{
+        box-shadow: none !important;
+    }
 }
