@@ -1,6 +1,8 @@
 body{
     margin: auto; 
     max-width: 8.5in;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 header{
@@ -10,17 +12,16 @@ margin-bottom: 2em;
 
 header #logo_container{
     
+    display:flex;
     max-width: 25%;
+    justify-content: center;
     
-
 }
 
 header #logo_container #logo{
     padding: 0;
-    width: 82px;
-    height: 97px;
     margin: 0 auto;
-    background-image: url("../static/logocrop.png");
+    
 }
 
 
@@ -30,10 +31,13 @@ header #name-container{
 }
 
 header #name-container #name{
-    font-size: 3em;
-    text-align: left;
-    letter-spacing: 0.2em;
-    
+	font-size: 3em;
+	text-align: left;
+	letter-spacing: 0.05em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #14324E;
+	font-style: normal;
+	font-weight: 400;
 }
 
 header #name-container #title{
@@ -174,7 +178,7 @@ main #side-column{
 #center-column #professional-profile #professional-profile-heading{
     text-transform:uppercase;
     font-size: 1.2em;
-    margin-bottom: 1em;
+   
 }
 
 #center-column #experience{
@@ -189,7 +193,7 @@ main #side-column{
 }
 
 .position-container{
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 .position-header{
@@ -223,6 +227,24 @@ footer{
     font-family: 'aragon-sans';
     src: url('../static/fonts/aragon-sans.woff2') format('woff2'),
          url('../static/fonts/aragon-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nunito-el';
+    src: url('../static/fonts/nunito-el.woff2') format('woff2'),
+         url('../static/fonts/nunito-el.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rust-heavy';
+    src: url('../static/fonts/rust-heavy.woff2') format('woff2'),
+         url('../static/fonts/rust-heavy.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
