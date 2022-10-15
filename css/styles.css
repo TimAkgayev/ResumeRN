@@ -5,6 +5,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+
 header{
 display: flex; 
 margin-bottom: 2em;
@@ -70,6 +71,7 @@ width: 100%;
 main #side-column{
     border-right: solid 1px black; 
     max-width: 25%;
+    font-family: "mukta-vaani";
 }
 
 
@@ -87,10 +89,10 @@ main #side-column{
 
 #telephone-container #phone-icon{
 
-    margin: 0em 0.5em;
-    display: inline-block;
-    background-image: url("../static/phoneicon.png");
-    width: 20px;
+    margin: 0em 0.5em; 
+    display: inline-block; 
+    background-image: url("../static/phoneicon.png"); 
+    width: 20px; 
     height: 20px; 
 }
 
@@ -171,8 +173,18 @@ main #side-column{
     padding-right: 1em;
 }
 
+#center-column {
+    font-family: "mukta-vaani";
+    
+}
+
 #center-column #professional-profile{
     padding: 0em 1em;
+}
+
+#center-column #professional-profile #bio{
+    margin-top: 1em;
+
 }
 
 #center-column #professional-profile #professional-profile-heading{
@@ -180,6 +192,8 @@ main #side-column{
     font-size: 1.2em;
    
 }
+
+
 
 #center-column #experience{
     padding: 0em 1em;
@@ -248,4 +262,14 @@ footer{
     font-weight: normal;
     font-style: normal;
 
+}
+
+@media print {
+    .no-print{
+        display: none !important;
+    }
+
+    .no-print-border{
+        box-shadow: none !important;
+    }
 }
